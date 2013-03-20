@@ -43,13 +43,13 @@ to spread
       ]
     ]
     
-    if ( random-float 1 <= RECOVER-RATE and infection-count > 1 )  ;; recover with probability p
+    if ( random-float 1 <= RECOVER-RATE )  ;; recover with probability p
       [
         set infected? false
         show-turtle
         set color grey + 1.5
           ;; incremement infection-count of the node doing the infection
-        set infection-count infection-count - 1
+        ;;if ( infection-count > 1 ) [set infection-count infection-count - 1]
           ;; color the link with the node doing the infection
         
       ]
