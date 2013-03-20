@@ -49,7 +49,7 @@ to spread
         show-turtle
         set color grey + 1.5
           ;; incremement infection-count of the node doing the infection
-        ;;if ( infection-count > 1 ) [set infection-count infection-count - 1]
+        set infection-count 0
           ;; color the link with the node doing the infection
         
       ]
@@ -257,7 +257,7 @@ avg-degree
 avg-degree
 0.25
 5.0
-5
+4
 0.05
 1
 NIL
